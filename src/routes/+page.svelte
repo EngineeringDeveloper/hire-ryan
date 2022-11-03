@@ -3,10 +3,20 @@
 	import { DoubleSide, Mesh } from 'three';
 	import * as Three from 'three';
 	import * as Utils from 'three/src/math/MathUtils';
-	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+	import { browser } from '$app/environment';
+    import { pane } from "tweakpane"
+
+    const  gridHelper = new Three.GridHelper(20,20)
+    const axesHelper = new Three.AxesHelper(10)
+
+    if (browser) {
+
+    }
 </script>
 
 <Threlte.Canvas>
+    <Threlte.Object3DInstance object={gridHelper}/>
+    <Threlte.Object3DInstance object={axesHelper}/>
 	<Threlte.PerspectiveCamera position={{ x: 20, y: 20, z: 20 }}>
 		<Threlte.OrbitControls autoRotate />
 	</Threlte.PerspectiveCamera>
