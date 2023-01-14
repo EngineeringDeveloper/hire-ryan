@@ -1,14 +1,15 @@
 import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 import preprocess from 'svelte-preprocess';
 import {mdsvex} from "mdsvex"
 
-const dev = "production" === "development";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	preprocess: [
+		vitePreprocess(),
 		preprocess(),
 		mdsvex({
 			extensions: ['.md']
@@ -22,7 +23,7 @@ const config = {
 			assets: "docs"
 		}),
 		paths: {
-			base: dev ? "''" : "/hire-ryan",
+			base: process.env.NODE_ENV === "production" ? "/hire-ryan" : "",
 		},
 		// target: "#svelte"
 	}

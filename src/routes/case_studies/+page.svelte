@@ -11,7 +11,7 @@
 
 <h1>Case Studies</h1>
 {#each studies as study}
-    <a href={`${base}/case_study/${study}`}>{studies}</a>
+    <a href={`${base}/case_studies/${study}`}>{studies}</a>
 {/each}
 
 
