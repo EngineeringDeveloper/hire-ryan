@@ -1,6 +1,10 @@
 ---
 title: Data Driven Development
 date: "16-1-2022"
+tags:
+    - Data
+    - Workflow
+    - Planning 
 ---
 
 ## Concept

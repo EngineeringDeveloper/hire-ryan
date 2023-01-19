@@ -9,8 +9,10 @@
     <div class="flex flex-col p-4">
         {#each data.posts as study}
             <a class="underline p-1" href={study.path}
-                >{JSON.stringify(study.meta)}</a
-            >
+                >{JSON.stringify(study.meta)}
+                {study.meta.tags}
+                <img src={`/images/${study.meta.image}`} alt="">
+            </a>
         {/each}
     </div>
 </div>
