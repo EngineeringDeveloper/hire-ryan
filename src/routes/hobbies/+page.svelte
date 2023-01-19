@@ -1,6 +1,11 @@
 <script lang="ts">
+    import type { PageData } from './$types';
+    
+    export let data: PageData;
+    
     
 </script>
+
 
 <div class= "container w-full mx-auto items-center flex flex-col">
     <h1 class="text-xl underline">Cycling</h1>
@@ -9,6 +14,10 @@
     </div>
     <br>
     <h1 class="text-xl undeline">Strava Activities</h1>
+    <div>Distance Rode in the Last 4 weeks: {(data.recent_ride_totals.distance/1000).toLocaleString()}Km</div>
+    <div>Km Rode all time: {(data.all_ride_totals.distance/1000).toLocaleString()}Km</div>
+    <div>Longest Ride: {(data.biggest_ride_distance/1000).toLocaleString()}Km</div>
+    <div>Largest Climb: {data.biggest_climb_elevation_gain.toLocaleString()}m</div>
 </div>
 
 <style>
