@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { PageData } from "./$types";
+    import { base } from '$app/paths';
     export let data: PageData;
     // https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog
 </script>
@@ -11,7 +12,9 @@
             <a class="underline p-1" href={study.path}
                 >{JSON.stringify(study.meta)}
                 {study.meta.tags}
-                <img src={`/images/${study.meta.image}`} alt="">
+                {#if study.meta.image}
+                <img src={`${base}/images/${study.meta.image}`} alt="">
+                {/if}
             </a>
         {/each}
     </div>
