@@ -8,16 +8,18 @@
 
 
 <div class= "container w-full mx-auto items-center flex flex-col">
-    <h1 class="text-xl underline">Cycling</h1>
+    <h1 class="underline">Cycling</h1>
     <div>I am a keen cyclist and the Event Coordinator of <a class="underlined link" href="https://www.muckle.cc/">Muckle Cycling Club</a>.
         We host Hill climb, road race and Cyclocross events, all of which I compete in.
     </div>
     <br>
-    <h1 class="text-xl undeline">Strava Activities</h1>
-    <div>Distance Rode in the Last 4 weeks: {(data.recent_ride_totals.distance/1000).toLocaleString()}Km</div>
-    <div>Km Rode all time: {(data.all_ride_totals.distance/1000).toLocaleString()}Km</div>
-    <div>Longest Ride: {(data.biggest_ride_distance/1000).toLocaleString()}Km</div>
-    <div>Largest Climb: {data.biggest_climb_elevation_gain.toLocaleString()}m</div>
+    <h2 class="underline">Strava Activities</h2>
+    <div class="grid grid-flow-col px-10">
+        <div>Distance Rode in the Last 4 weeks: {(data.recent_ride_totals.distance/1000).toLocaleString()}Km</div>
+        <div>Km Rode all time: {(data.all_ride_totals.distance/1000).toLocaleString()}Km</div>
+        <div>Longest Ride: {(data.biggest_ride_distance/1000).toLocaleString()}Km</div>
+        <div>Largest Climb: {data.biggest_climb_elevation_gain.toLocaleString()}m</div>
+    </div>
 </div>
 
 <style>

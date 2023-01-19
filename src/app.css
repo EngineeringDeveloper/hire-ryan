@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 html, body { @apply h-full overflow-hidden; }
+
+@layer base {
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    }
+  }
