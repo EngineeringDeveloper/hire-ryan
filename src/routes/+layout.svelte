@@ -11,6 +11,10 @@
             class="btn btn-ghost normal-case text-xl"
             href={`${base}/case_studies`}>Case Studies</a
         >
+        <a
+            class="btn btn-ghost normal-case text-xl"
+            href={`${base}/hobbies`}>Hobbies</a
+        >
         <!-- <a class="btn btn-ghost normal-case text-xl" href={`${base}/uses`}
             >Uses</a
         > -->
