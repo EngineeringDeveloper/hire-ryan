@@ -13,12 +13,14 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
         
-      - name: Create .env
-        run: |
-          touch .env
-          echo "${{ secrets.SECRET_ENV }}" >> .env
-          dir
-          cat .env
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1.3
+        with:
+          envkey_SECRET_STAVA_ATHELTE_ID: ${{ secrets.SECRET_STAVA_ATHELTE_ID }}
+          envkey_SECRET_STRAVA_ACCESS_TOKEN: ${{ secrets.SECRET_STRAVA_ACCESS_TOKEN }}
+          envkey_SECRET_STRAVA_CLIENT_ID: ${{ secrets.SECRET_STRAVA_CLIENT_ID }}
+          envkey_SECRET_STRAVA_CLIENT_SECRET: ${{ secrets.SECRET_STRAVA_CLIENT_SECRET }}
+          envkey_SECRET_STRAVA_REFRESH_TOKEN: ${{ secrets.SECRET_STRAVA_REFRESH_TOKEN }}
 
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
