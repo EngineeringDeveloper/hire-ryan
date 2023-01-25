@@ -5,15 +5,27 @@
     // https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog
 </script>
 
-<div class="container mx-auto w-full flex flex-col items-center">
+<div class="container mx-auto w-full flex flex-col items-center scroll-auto">
     <h1 class="text-xl underline ">Case Studies</h1>
-    <div class="flex flex-col p-4">
+    <div class="grid grid-flow-col col-span-4 p-4">
         {#each data.posts as study}
-            <a class="underline p-1" href={study.path}
-                >{JSON.stringify(study.meta)}
-                {study.meta.tags}
+            <a class="underline p-1 w-32 h-32 group hover:w-52 hover:text-2xl ease-in-out duration-300" href={study.path}
+                >
+                <div class="absolute w-32 group-hover:w-52">
+                    <h2 class="text-orange-500">
+                        {study.meta.title}
+                    </h2>
+                    <div class="opacity-0 group-hover:opacity-80 hover:transition-opacity flex flex-row flex-wrap">
+                        {#each study.meta.tags as tag}
+                            <h2 class= "px-1">#{tag}</h2>
+                        {/each}
+                    </div>
+                </div>
+                
                 {#if study.meta.image}
-                <img src={`${base}/images/${study.meta.image}`} alt="">
+                <img class="object-none w-32 h-32 group-hover:w-52 ease-in-out duration-300" src={`${base}/images/${study.meta.image}`} alt="">
+                {:else}
+                <img class="object-none w-32 h-32 group-hover:w-52 ease-in-out duration-300" src={`${base}/images/placeholder.png`} alt="">
                 {/if}
             </a>
         {/each}

@@ -6,9 +6,15 @@ html, body { @apply h-full overflow-hidden; }
 
 @layer base {
     h1 {
-      @apply text-2xl;
+      @apply text-2xl py-1;
     }
     h2 {
-      @apply text-xl;
+      @apply text-xl py-1;
+    }
+    p {
+      @apply py-1
+    }
+    article {
+      @apply mx-5 
     }
   }
