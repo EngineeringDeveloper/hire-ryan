@@ -2,19 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body { @apply h-full overflow-hidden; }
+html,
+body {
+    @apply h-full overflow-hidden;
+}
 
 @layer base {
     h1 {
-      @apply text-2xl py-1;
+        @apply text-2xl py-1;
     }
     h2 {
-      @apply text-xl py-1;
+        @apply text-xl py-1;
     }
     p {
-      @apply py-1
+        @apply py-1;
     }
     article {
-      @apply mx-5 
+        @apply mx-5;
     }
-  }
+}
+
+@layer utilities {
+    .fancy-block {
+        @apply -inset-1 -skew-y-3 bg-pink-500;
+    }
+    /* https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-sibling-state:~:text=When%20using%20these%20modifiers%2C%20Tailwind%20will%20automatically%20add%20content%3A%20%27%27%20by%20default%20so%20you%20don%E2%80%99t%20have%20to%20specify%20it%20unless%20you%20want%20a%20different%20value */
+
+}
