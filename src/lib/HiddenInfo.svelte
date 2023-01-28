@@ -3,19 +3,22 @@
     export let summary: string;
     export let tilt: boolean = false
 
-    let direction = tilt ? "c" : "ac";
-    // class="{`impact group-hover/mech:fancy-block-${direction} group-hover/mech:bg-pink-500`}"
-    let baseClass = `w-fit group-hover/mech:fancy-block-${direction} group-hover/mech:bg-pink-500 group-hover/mech:text-black`
+    let id = title.split(" ")[0]
+    let direction = tilt ? "clockwise " : "anti-clockwise";
+    
+    const topClass = `group/${id} flex flex-col w-fit`
+    const baseClass = `impact w-fit group-hover/${id}:${direction} group-hover/mech:bg-pink-500 group-hover/mech:text-black`
+    const subClass = `h-0 group-hover/${id}:h-52 overflow-hidden transition-height duration-300`
 </script>
 
-<div class="impact group/mech flex flex-col w-fit">
+<div class="{topClass}">
     <div
         class="{baseClass}"
     >
         {title}
     </div>
     <div
-        class="h-0 group-hover/mech:h-52 overflow-hidden transition-height duration-300"
+        class="{subClass}"
     >
         <br />
         <div class="text-sm">

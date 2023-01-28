@@ -7,8 +7,8 @@
 </script>
 
 <div class="grid content-center h-full w-full">
-    <div class="group show-all">
-        <div class="impact group-hover:opacity-10 hover:!opacity-100 peer">
+    <div class="group/top show-all">
+        <div class="impact group-hover/top:opacity-10 hover:!opacity-100 peer">
             I'M RYAN.
         </div>
         <HiddenInfo

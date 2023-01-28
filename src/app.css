@@ -23,12 +23,12 @@ body {
 }
 
 @layer utilities {
-    .fancy-block-ac {
+    .anti-clockwise {
         @apply -inset-1 -skew-y-3;
     }
 
-    .fancy-block-c {
-        @apply inset-1 skew-y-3;
+    .clockwise {
+        @apply -inset-2 -skew-y-3;
     }
 
     .impact {
