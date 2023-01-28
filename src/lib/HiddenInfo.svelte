@@ -41,5 +41,3 @@
         <slot/>
     </div>
 </div> -->
-<style lang="postcss">
-</style>
