@@ -1,39 +1,44 @@
 <script lang="ts">
+    import HiddenInfo from "$lib/HiddenInfo.svelte";
+
+
+
     // Examples https://awesome-portfolios.vercel.app/
 </script>
 
-<blockquote class="group show-all">
-    <span class="impact group-hover:opacity-10 hover:!opacity-100 peer"
-        >I'M RYAN.
-    </span>
-    <span class="info-block group/mech">
-        <div class= "impact group-hover/mech:fancy-block">
-            MECHANICAL DESIGN ENGINEER
+<div class="grid content-center h-full w-full">
+    <div class="group show-all">
+        <div class="impact group-hover:opacity-10 hover:!opacity-100 peer">
+            I'M RYAN.
         </div>
-        <div class="info group-hover/mech:!inline ">More info on Mechanical Engineering</div>
-    </span>
-
-    <span class="impact info-block hover:fancy-block"
-        >FULL STACK PROGRAMMER</span
-    >
-    <span class="impact info-block hover:fancy-block">DATA ANALYIST</span>
-    <span class="impact info-block hover:fancy-block">CYCLIST</span>
-</blockquote>
+        <HiddenInfo
+            title={"MECHANICAL DESIGN ENGINEER"}
+            summary={"More info on Mechanical Engineering"}>
+            Hello
+        </HiddenInfo>
+        <HiddenInfo
+            title={"FULL STACK PROGRAMMER"}
+            summary={"More info on full stack"}
+            tilt
+        >
+        </HiddenInfo>
+        <HiddenInfo
+            title={"DATA ANALSIS"}
+            summary={"More info on Data Analysis"}
+        >
+        </HiddenInfo>
+        <HiddenInfo title={"CYCLING"} summary={"Cycling"} tilt>
+        </HiddenInfo>
+    </div>
+</div>
 
 <!-- make the commas and &s dissapear -->
 <style lang="postcss">
     .show-all {
-        @apply container flex flex-col m-auto ;
-    }
-    .info-block {
-        @apply group-hover:opacity-10 hover:!opacity-100 peer-hover:!opacity-100 hover:mb-20 transition-all duration-300;
-    }
-
-    .info {
-        @apply hidden transition-all duration-300;
+        @apply mx-1 w-fit min-w-fit my-auto grid justify-items-start;
     }
 
     .impact {
-        @apply w-full text-9xl md:text-8xl sm:text-6xl my-3 transition-all duration-300;
+        @apply text-9xl md:text-8xl sm:text-7xl my-3 transition-all duration-300;
     }
 </style>

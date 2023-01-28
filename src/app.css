@@ -23,9 +23,12 @@ body {
 }
 
 @layer utilities {
-    .fancy-block {
-        @apply hover:-inset-1 hover:-skew-y-3 hover:bg-pink-500;
-        /* @apply hover:before:block hover:before:absolute hover:before:-inset-1 hover:before:-skew-y-3 hover:before:bg-pink-500 relative inline-block; */
+    .fancy-block-ac {
+        @apply -inset-1 -skew-y-3;
+    }
+
+    .fancy-block-c {
+        @apply inset-1 skew-y-3;
     }
     /* https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-sibling-state:~:text=When%20using%20these%20modifiers%2C%20Tailwind%20will%20automatically%20add%20content%3A%20%27%27%20by%20default%20so%20you%20don%E2%80%99t%20have%20to%20specify%20it%20unless%20you%20want%20a%20different%20value */
 
