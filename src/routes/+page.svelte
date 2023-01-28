@@ -23,7 +23,7 @@
 <!-- make the commas and &s dissapear -->
 <style lang="postcss">
     .show-all {
-        @apply container flex flex-col m-auto items-center;
+        @apply container flex flex-col m-auto ;
     }
     .info-block {
         @apply group-hover:opacity-10 hover:!opacity-100 peer-hover:!opacity-100 hover:mb-20 transition-all duration-300;
