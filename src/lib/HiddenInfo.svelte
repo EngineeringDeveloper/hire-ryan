@@ -35,5 +35,6 @@
 
     .impact {
         @apply text-9xl md:text-8xl sm:text-7xl my-3 transition-all duration-300;
+        border: 1px solid black;
     }
 </style>
