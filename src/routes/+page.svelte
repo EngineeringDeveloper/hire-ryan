@@ -23,7 +23,7 @@
         >
         </HiddenInfo>
         <HiddenInfo
-            title={"DATA ANALSIS"}
+            title={"DATA ANALYSIS"}
             summary={"More info on Data Analysis"}
         >
         </HiddenInfo>
