@@ -1,25 +1,20 @@
 <script lang="ts">
     export let title: string;
     export let summary: string;
-    export let tilt: boolean = false
+    export let tilt: boolean = false;
 
-    let id = title.split(" ")[0]
-    let direction = tilt ? "clockwise " : "anti-clockwise";
-    
-    const topClass = `group/${id} flex flex-col w-fit`
-    const baseClass = `impact w-fit group-hover/${id}:${direction} group-hover/mech:bg-pink-500 group-hover/mech:text-black`
-    const subClass = `h-0 group-hover/${id}:h-52 overflow-hidden transition-height duration-300`
+    const topClass = `group flex flex-col w-fit`;
+    let baseClass = tilt
+        ? "impact w-fit group-hover:clockwise group-hover:bg-pink-500 group-hover:text-black "
+        : "impact w-fit group-hover:anti-clockwise group-hover:bg-pink-500 group-hover:text-black ";
+    const subClass = `h-0 group-hover:h-52 overflow-hidden transition-height duration-300`;
 </script>
 
-<div class="{topClass}">
-    <div
-        class="{baseClass}"
-    >
+<div class={topClass}>
+    <div class={baseClass}>
         {title}
     </div>
-    <div
-        class="{subClass}"
-    >
+    <div class={subClass}>
         <br />
         <div class="text-sm">
             {summary}
@@ -28,13 +23,13 @@
     </div>
 </div>
 
-<!-- <div class="info-block group/mech">
+<!-- <div class="info-block group">
     <div
-        class="impact group-hover/mech:fancy-block-ac group-hover/mech:bg-pink-500"
+        class="impact group-hover:fancy-block-ac group-hover:bg-pink-500"
     >
         {title}
     </div>
-    <div class="info group-hover/mech:!inline">
+    <div class="info group-hover:!inline">
         <br />
         {summary}
         <br>
