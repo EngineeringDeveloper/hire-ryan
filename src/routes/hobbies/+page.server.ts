@@ -1,12 +1,12 @@
-import type { PageServerLoad } from "./$types";
-import { default as stravaAPI, type Strava } from "strava-v3";
+// import type { PageServerLoad } from "./$types";
+// import { default as stravaAPI, type Strava } from "strava-v3";
 // https://www.npmjs.com/package/strava-v3
-import {
-    SECRET_STRAVA_ACCESS_TOKEN,
-    SECRET_STAVA_ATHELTE_ID,
-    SECRET_STRAVA_CLIENT_ID,
-    SECRET_STRAVA_REFRESH_TOKEN,
-} from "$env/static/private";
+// import {
+//     SECRET_STRAVA_ACCESS_TOKEN,
+//     SECRET_STAVA_ATHELTE_ID,
+//     SECRET_STRAVA_CLIENT_ID,
+//     SECRET_STRAVA_REFRESH_TOKEN,
+// } from "$env/static/private";
 
 // const strava: Strava = new stravaAPI.client(SECRET_STRAVA_ACCESS_TOKEN)
 
