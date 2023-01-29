@@ -3,7 +3,7 @@
     export let summary: string;
     export let tilt: boolean = false;
 
-    const topClass = `group flex flex-col w-fit`;
+    const topClass = `group flex flex-col w-fit group-hover/top:opacity-10 hover:!opacity-100 peer-hover:!opacity-100`;
     let baseClass = tilt
         ? "impact w-fit group-hover:clockwise group-hover:bg-pink-500 group-hover:text-black "
         : "impact w-fit group-hover:anti-clockwise group-hover:bg-pink-500 group-hover:text-black ";

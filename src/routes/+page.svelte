@@ -1,8 +1,5 @@
 <script lang="ts">
     import HiddenInfo from "$lib/HiddenInfo.svelte";
-
-
-
     // Examples https://awesome-portfolios.vercel.app/
 </script>
 
