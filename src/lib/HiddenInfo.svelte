@@ -8,11 +8,9 @@
     export let cases: caseDetails[]= []
     export let tilt: boolean = false;
 
-    const topClass = `group flex flex-col w-fit group-hover/top:opacity-10 hover:!opacity-100 peer-hover:!opacity-100`;
     let titleClass = tilt
         ? "impact w-fit group-hover:clockwise group-hover:bg-pink-500 group-hover:text-black"
         : "impact w-fit group-hover:anti-clockwise group-hover:bg-pink-500 group-hover:text-black";
-    const subClass = `h-0 group-hover:h-52 overflow-hidden transition-height duration-300`;
 
     let titleDiv: HTMLDivElement;
     function setTitleWidth() {
@@ -34,11 +32,11 @@
     });
 </script>
 
-<div class={topClass}>
+<div class="group flex flex-col w-fit group-hover/top:opacity-10 hover:!opacity-100 peer-hover:!opacity-100">
     <div class={titleClass} bind:this={titleDiv}>
         {title}
     </div>
-    <div class={subClass}>
+    <div class="h-0 opacity-0 group-hover:h-52 group-hover:opacity-100 overflow-hidden transition-height duration-300">
         <br />
         <div class="text-sm">
             {summary}
