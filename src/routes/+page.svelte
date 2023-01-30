@@ -41,9 +41,6 @@
         },
     ]
 
-    console.log(impactMessages)
-    console.log(JSON.stringify(data.posts))
-
 </script>
 
 <div class="grid content-center h-full w-full">

@@ -28,7 +28,7 @@ body {
     }
 
     .clockwise {
-        @apply -inset-2 -skew-y-3;
+        @apply inset-1 skew-y-3;
     }
 
     .impact {

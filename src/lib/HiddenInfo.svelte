@@ -22,7 +22,6 @@
         range.setStartBefore(text);
         range.setEndAfter(text);
         const clientRect = range.getBoundingClientRect();
-        console.log(clientRect.width, title);
         titleDiv.style.width = `${clientRect.width + 5}px`;
     }
 
