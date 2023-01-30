@@ -1,8 +1,11 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import type { caseDetails } from "$lib/types/caseStudyTypes";
+    import CaseList from "./CaseList.svelte";
 
     export let title: string;
     export let summary: string;
+    export let cases: caseDetails[]= []
     export let tilt: boolean = false;
 
     const topClass = `group flex flex-col w-fit group-hover/top:opacity-10 hover:!opacity-100 peer-hover:!opacity-100`;
@@ -41,6 +44,7 @@
         <div class="text-sm">
             {summary}
         </div>
+        <CaseList cases={cases}/>    
         <slot />
     </div>
 </div>

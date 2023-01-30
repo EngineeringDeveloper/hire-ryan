@@ -6,4 +6,4 @@
     // https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog
 </script>
 
-<CaseList posts={data.posts} />
+<CaseList cases={data.posts} />

@@ -5,3 +5,8 @@ export interface meta {
     category: string[];
     image?: string;
 }
+
+export type caseDetails = {
+    meta: meta,
+    path: string,
+}

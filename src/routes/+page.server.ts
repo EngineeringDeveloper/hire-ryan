@@ -1,6 +1,6 @@
 import type { PageServerLoad } from "./$types";
 import { base } from "$app/paths";
-import type { meta } from "$lib/types/caseStudyTypes";
+import type { caseDetails, meta } from "$lib/types/caseStudyTypes";
 
 type caseStudyLoad = [
     string,
@@ -8,13 +8,13 @@ type caseStudyLoad = [
 ][];
 
 const fetchMarkdownPosts = async () => {
-    const allPostFiles: any = import.meta.glob("./**.md");
+    const allPostFiles: any = import.meta.glob("./case_studies/**.md");
     const iterablePostFiles: caseStudyLoad = Object.entries(allPostFiles);
 
-    const allPosts = await Promise.all(
+    const allPosts: caseDetails[] = await Promise.all(
         iterablePostFiles.map(async ([path, resolver]) => {
             const { metadata } = await resolver();
-            const postPath = `${base}/case_studies/${path
+            const postPath = `${base}/${path
                 .replace("./", "")
                 .replace(".md", "")}`;
 
