@@ -4,6 +4,9 @@ date: "13-1-2022"
 tags:
     - Mechanical
     - Design
+category:
+    - MECHANICAL
+    - DATA
 image: "Mechanical Design.jfif"
 ---
 
