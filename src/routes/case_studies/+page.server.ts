@@ -1,12 +1,8 @@
 import type { PageServerLoad } from "./$types";
 import { base } from "$app/paths";
+import type { meta } from "$lib/types/caseStudyTypes";
 
-interface meta {
-    title: string;
-    date: string;
-    tags: string[];
-    image: string;
-}
+
 
 type caseStudyLoad = [
     string,

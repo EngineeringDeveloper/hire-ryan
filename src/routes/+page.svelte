@@ -20,7 +20,7 @@
             tilt
         />
         <HiddenInfo
-            title={"DATA ANALYSIS"}
+            title={"DATA ANALYIST"}
             summary={"More info on Data Analysis"}
         />
         <HiddenInfo title={"CYCLING"} summary={"Cycling"} tilt />
