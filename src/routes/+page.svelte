@@ -10,41 +10,22 @@
         </div>
         <HiddenInfo
             title={"MECHANICAL DESIGN ENGINEER"}
-            summary={"More info on Mechanical Engineering"}>
+            summary={"More info on Mechanical Engineering"}
+        >
             Hello
         </HiddenInfo>
         <HiddenInfo
             title={"FULL STACK PROGRAMMER"}
             summary={"More info on full stack"}
             tilt
-        >
-        </HiddenInfo>
+        />
         <HiddenInfo
             title={"DATA ANALYSIS"}
             summary={"More info on Data Analysis"}
-        >
-        </HiddenInfo>
-        <HiddenInfo title={"CYCLING"} summary={"Cycling"} tilt>
-        </HiddenInfo>
+        />
+        <HiddenInfo title={"CYCLING"} summary={"Cycling"} tilt />
     </div>
 </div>
-
-<!-- <div class="show-all">
-    <div class="impact">I'M RYAN</div>
-    <div class="impact group/mech flex flex-col w-fit">
-        <div class="w-fit group-hover/mech:fancy-block-ac group-hover/mech:bg-pink-500 group-hover/mech:text-black">
-            MECHANICAL ENGINEER
-        </div>
-        <div class= "h-0 group-hover/mech:h-52 overflow-hidden transition-height duration-300">
-            <br>
-            Further Info
-        </div>
-    </div>
-    <div class="impact hover:fancy-block-c hover:bg-pink-500">FULL STACK ENGINEER</div>
-    <div class="impact hover:fancy-block-ac hover:bg-pink-500">DATA ANALYIST</div>
-    <div class="impact hover:fancy-block-c hover:bg-pink-500">CYCLIST</div>
-
-</div> -->
 
 <!-- make the commas and &s dissapear -->
 <style lang="postcss">
