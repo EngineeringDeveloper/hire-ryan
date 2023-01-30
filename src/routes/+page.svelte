@@ -39,6 +39,14 @@
         }),
         tilt: false,
         },
+        {
+        title: "CYCLIST",
+        summary: "More info on Cycling",
+        cases: data.posts.filter((value) => {
+            return value.meta.category.includes("CYCLING")
+        }),
+        tilt: true,
+        },
     ]
 
 </script>
