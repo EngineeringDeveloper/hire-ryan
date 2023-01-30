@@ -8,7 +8,7 @@
 
 {#if cases.length > 0}
     <div
-        class="container mx-auto w-full flex flex-col items-center scroll-auto"
+        class="relative container mx-auto w-full flex flex-col items-center scroll-auto"
     >
         <h1 class="text-xl underline ">Case Studies</h1>
         <div class="grid grid-flow-col col-span-4 p-4">
