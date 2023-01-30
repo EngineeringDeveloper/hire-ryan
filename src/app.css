@@ -32,7 +32,7 @@ body {
     }
 
     .impact {
-        @apply text-4xl lg:text-9xl md:text-8xl sm:text-7xl my-3 transition-all duration-300;
+        @apply text-4xl xl:text-8xl lg:text-8xl md:text-8xl sm:text-7xl my-3 transition-all duration-300;
         border: 1px solid black;
     }
     /* https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-sibling-state:~:text=When%20using%20these%20modifiers%2C%20Tailwind%20will%20automatically%20add%20content%3A%20%27%27%20by%20default%20so%20you%20don%E2%80%99t%20have%20to%20specify%20it%20unless%20you%20want%20a%20different%20value */
