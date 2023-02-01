@@ -30,6 +30,5 @@ const fetchMarkdownPosts = async () => {
 
 export const load = (async () => {
     const posts = await fetchMarkdownPosts();
-    console.log(posts);
     return { posts };
 }) satisfies PageServerLoad;
