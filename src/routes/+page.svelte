@@ -52,8 +52,8 @@
 </script>
 
 <div class="grid content-center h-full w-full">
-    <div class="group/top show-all">
-        <div class="impact group-hover/top:opacity-10 hover:!opacity-100 peer">
+    <div class="group/all show-all">
+        <div class="impact peer-hover/more-info:opacity-10 peer/name">
             I'M RYAN.
         </div>
         {#each impactMessages as msg}

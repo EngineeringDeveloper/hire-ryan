@@ -5,7 +5,7 @@
 
     export let title: string;
     export let summary: string;
-    export let cases: caseDetails[]= []
+    export let cases: caseDetails[] = [];
     export let tilt: boolean = false;
 
     let titleClass = tilt
@@ -32,16 +32,20 @@
     });
 </script>
 
-<div class="group flex flex-col w-fit group-hover/top:opacity-10 hover:!opacity-100 peer-hover:!opacity-100">
+<div
+    class="peer/more-info group flex flex-col w-fit peer-hover/more-info:opacity-10 hover:!opacity-100 peer-hover/name:!opacity-100"
+>
     <div class={titleClass} bind:this={titleDiv}>
         {title}
     </div>
-    <div class="h-0 opacity-0 group-hover:h-52 group-hover:opacity-100 overflow-hidden transition-height duration-300">
+    <div
+        class="h-0 opacity-0 group-hover:h-52 group-hover:opacity-100 overflow-hidden transition-height duration-300"
+    >
         <br />
         <div class="text-sm">
             {summary}
         </div>
-        <CaseList cases={cases}/>    
+        <CaseList {cases} />
         <slot />
     </div>
 </div>
