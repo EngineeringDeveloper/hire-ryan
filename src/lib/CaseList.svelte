@@ -1,9 +1,7 @@
 <script lang="ts">
-    import { base } from "$app/paths";
     import type { caseDetails } from "$lib/types/caseStudyTypes";
 
     export let cases: caseDetails[];
-    console.log(JSON.stringify(cases))
 </script>
 
 {#if cases.length > 0}
