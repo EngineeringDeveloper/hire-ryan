@@ -6,7 +6,6 @@ tags:
     - Design
 category:
     - MECHANICAL
-    - DATA
 image: "Mechanical Design.jfif"
 ---
 
