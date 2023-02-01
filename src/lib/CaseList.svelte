@@ -33,13 +33,13 @@
                     {#if study.meta.image}
                         <img
                             class="object-none w-32 h-32 group-hover:w-52 ease-in-out duration-300"
-                            src={`${base}/images/${study.meta.image}`}
+                            src={`/images/${study.meta.image}`}
                             alt=""
                         />
                     {:else}
                         <img
                             class="object-none w-32 h-32 group-hover:w-52 ease-in-out duration-300"
-                            src={`${base}/images/placeholder.png`}
+                            src={`/images/placeholder.png`}
                             alt=""
                         />
                     {/if}
