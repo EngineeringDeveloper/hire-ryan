@@ -1,5 +1,4 @@
 <script lang="ts">
-    import type { meta } from "$lib/types/caseStudyTypes";
     import type { PageData } from "./$types";
 
     export let data: PageData;
