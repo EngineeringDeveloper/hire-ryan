@@ -1,54 +1,16 @@
 <script lang="ts">
     import HiddenInfo from "$lib/HiddenInfo.svelte";
-    import type { caseDetails } from "$lib/types/caseStudyTypes";
     import type { PageData } from "./$types";
     
     // Examples https://awesome-portfolios.vercel.app/
     
     export let data: PageData;
 
-    interface Impact {
-        title: string;
-        summary: string;
-        cases: caseDetails[];
-        tilt: boolean;
+    function filter_by_category(category: string) {
+        return data.posts.filter((value) => {
+            return value.meta.category.includes(category)
+        })
     }
-
-    let impactMessages:Impact[] = [
-        {
-        title: "MECHANICAL DESIGN ENGINEER",
-        summary: "More info on Mechanical Engineering",
-        cases: data.posts.filter((value) => {
-            return value.meta.category.includes("MECHANICAL")
-        }),
-        tilt: false,
-        },
-        {
-        title: "FULL STACK PROGRAMMER",
-        summary: "More info on Full Stack Programming",
-        cases: data.posts.filter((value) => {
-            return value.meta.category.includes("FULLSTACK")
-        }),
-        tilt: true,
-        },
-        {
-        title: "DATA ANALYIST",
-        summary: "More info on Data Analysis",
-        cases: data.posts.filter((value) => {
-            return value.meta.category.includes("DATA")
-        }),
-        tilt: false,
-        },
-        {
-        title: "CYCLIST",
-        summary: "More info on Cycling",
-        cases: data.posts.filter((value) => {
-            return value.meta.category.includes("CYCLING")
-        }),
-        tilt: true,
-        },
-    ]
-
 </script>
 
 <svelte:head>
@@ -60,9 +22,30 @@
         <div class="impact peer-hover/more-info:opacity-10 peer/name">
             I'M RYAN.
         </div>
-        {#each impactMessages as msg}
-            <HiddenInfo {...msg} ></HiddenInfo>
-        {/each}
+        <HiddenInfo
+        title={"MECHANICAL DESIGN ENGINEER"}
+        summary={"More info on Mechanical Engineering"}
+        cases = {filter_by_category("MECHANICAL")}
+        >
+        </HiddenInfo>
+        <HiddenInfo
+        title={"FULL STACK PROGRAMMER"}
+        summary={"More info on Full Stack Programming"}
+        cases = {filter_by_category("FULLSTACK")}
+        >
+        </HiddenInfo>
+        <HiddenInfo
+        title={"DATA ANALYIST"}
+        summary={"More info on Data Analysis"}
+        cases = {filter_by_category("DATA")}
+        >
+        </HiddenInfo>
+        <HiddenInfo
+        title={"CYCLIST"}
+        summary={"More info on Cycling"}
+        cases = {filter_by_category("CYCLING")}
+        >
+        </HiddenInfo>
     </div>
 </div>
 
