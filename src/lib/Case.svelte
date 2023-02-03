@@ -46,7 +46,7 @@
 
     <img
         class="object-none w-32 h-32 group-hover:w-52 ease-in-out duration-300"
-        src={imgSrc}
+        src="{imgSrc}"
         alt=""
     />
 </a>
