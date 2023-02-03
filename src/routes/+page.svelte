@@ -51,6 +51,10 @@
 
 </script>
 
+<svelte:head>
+  <title>Ryan Parkinson</title>
+</svelte:head>
+
 <div class="grid content-center h-full w-full">
     <div class="group/all show-all">
         <div class="impact peer-hover/more-info:opacity-10 peer/name">
