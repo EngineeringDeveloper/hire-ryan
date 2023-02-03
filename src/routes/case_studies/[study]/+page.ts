@@ -1,15 +1,14 @@
 import type { meta } from "$lib/types/caseStudyTypes";
+import type { PageLoad } from './$types';
 
-type fileImport = {meta:meta,  content: any }
-/** @type {import('./$types').PageLoad} */
-export async function load({ params }: { params: { study: string } }): Promise<fileImport> {
+export const load = (async ({ params }: { params: { study: string } }) => {
 	const post = await import(`../${params.study}.md`);
-	console.log(typeof post)
-	const meta = post.metadata;
+	const meta: meta = post.metadata;
 	const content = post.default;
 
 	return {
 		meta,
 		content,
 	};
-}
+}) satisfies PageLoad;
+
