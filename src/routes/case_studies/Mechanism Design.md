@@ -6,7 +6,7 @@ tags:
     - Design
 category:
     - MECHANICAL
-image: "Mechanical Design.jfif"
+image: "Mechanical Design"
 ---
 
 # STAR

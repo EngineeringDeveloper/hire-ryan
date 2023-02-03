@@ -2,6 +2,20 @@
     import type { caseDetails } from "$lib/types/caseStudyTypes";
 
     export let caseStudy: caseDetails;
+
+    const imageOptions = new Map([
+        [
+            "Mechanical Design",
+            new URL("/images/Mechanical Design.jfif", import.meta.url).href,
+        ],
+    ]);
+
+    let imgSrc: string;
+    if (imageOptions.has(caseStudy.meta.image!)) {
+        imgSrc = imageOptions.get(caseStudy.meta.image!)!;
+    } else {
+        imgSrc = new URL("/images/placeholder.png", import.meta.url).href;
+    }
 </script>
 
 <a
@@ -12,7 +26,7 @@
         <h2 class="text-orange-500 w-32">
             {caseStudy.meta.title}
         </h2>
-        <div class= "relative overflow-x-hidden w-32">
+        <div class="relative overflow-x-hidden w-32">
             <div
                 class="whitespace-nowrap animate-marquee opacity-0 group-hover:opacity-80 hover:transition-opacity flex flex-row flex-wrap"
             >
@@ -30,17 +44,9 @@
         </div>
     </div>
 
-    {#if caseStudy.meta.image}
-        <img
-            class="object-none w-32 h-32 group-hover:w-52 ease-in-out duration-300"
-            src={`/images/${caseStudy.meta.image}`}
-            alt=""
-        />
-    {:else}
-        <img
-            class="object-none w-32 h-32 group-hover:w-52 ease-in-out duration-300"
-            src={`/images/placeholder.png`}
-            alt=""
-        />
-    {/if}
+    <img
+        class="object-none w-32 h-32 group-hover:w-52 ease-in-out duration-300"
+        src={imgSrc}
+        alt=""
+    />
 </a>
