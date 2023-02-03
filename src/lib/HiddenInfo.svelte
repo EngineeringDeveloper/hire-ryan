@@ -39,7 +39,7 @@
         {title}
     </div>
     <div
-        class="h-0 opacity-0 group-hover:h-52 group-hover:opacity-100 overflow-hidden transition-height duration-300"
+        class="h-0 w-screen opacity-0 group-hover:h-fit group-hover:opacity-100 overflow-hidden transition-height duration-300"
     >
         <br />
         <div class="text-sm">
