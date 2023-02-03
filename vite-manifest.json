@@ -1,85 +1,14 @@
 {
-  "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-dfa22a84.css",
-    "src": "src/routes/+layout.css"
-  },
   "src/routes/+page.css": {
     "file": "_app/immutable/assets/_page-980069ec.css",
     "src": "src/routes/+page.css"
   },
-  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-515c3b08.js",
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-386dfdec.js",
-      "_singletons-9076f6b0.js"
-    ]
-  },
-  "_singletons-9076f6b0.js": {
-    "file": "_app/immutable/chunks/singletons-9076f6b0.js",
-    "imports": [
-      "_index-386dfdec.js"
-    ]
-  },
-  "src/routes/case_studies/+page.svelte": {
-    "file": "_app/immutable/components/pages/case_studies/_page.svelte-216bc4ae.js",
-    "src": "src/routes/case_studies/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-386dfdec.js",
-      "_CaseList-8563d385.js"
-    ]
-  },
-  "src/routes/case_studies/[study]/+page.svelte": {
-    "file": "_app/immutable/components/pages/case_studies/_study_/_page.svelte-ec9b8d31.js",
-    "src": "src/routes/case_studies/[study]/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-386dfdec.js"
-    ]
-  },
-  "_CaseList-8563d385.js": {
-    "file": "_app/immutable/chunks/CaseList-8563d385.js",
-    "imports": [
-      "_index-386dfdec.js"
-    ]
-  },
-  "_index-386dfdec.js": {
-    "file": "_app/immutable/chunks/index-386dfdec.js"
-  },
-  "_preload-helper-41c905a7.js": {
-    "file": "_app/immutable/chunks/preload-helper-41c905a7.js"
-  },
-  "__page-13b21993.js": {
-    "file": "_app/immutable/chunks/_page-13b21993.js",
-    "imports": [
-      "_preload-helper-41c905a7.js"
-    ],
-    "dynamicImports": [
-      "src/routes/case_studies/Data Driven Development.md",
-      "src/routes/case_studies/Mechanism Design.md"
-    ]
-  },
-  ".svelte-kit/generated/client-optimized/nodes/5.js": {
-    "file": "_app/immutable/chunks/5-ed19cdc1.js",
-    "src": ".svelte-kit/generated/client-optimized/nodes/5.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/hobbies/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/client-optimized/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-eee92dcf.js",
-    "src": ".svelte-kit/generated/client-optimized/nodes/4.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__page-13b21993.js",
-      "src/routes/case_studies/[study]/+page.svelte"
-    ]
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout-dfa22a84.css",
+    "src": "src/routes/+layout.css"
   },
   ".svelte-kit/generated/client-optimized/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-4ed3b6a1.js",
+    "file": "_app/immutable/chunks/2-cd57fb01.js",
     "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -87,51 +16,28 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-5a4a2465.js",
+    "file": "_app/immutable/chunks/3-4d7275af.js",
     "src": ".svelte-kit/generated/client-optimized/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/case_studies/+page.svelte"
     ]
   },
-  "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-5e96992f.js",
-    "src": "src/routes/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-386dfdec.js",
-      "_CaseList-8563d385.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-980069ec.css"
-    ]
-  },
-  "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-c6f66d7b.js",
-    "src": "src/routes/+layout.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-386dfdec.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_layout-dfa22a84.css"
-    ]
-  },
-  ".svelte-kit/generated/client-optimized/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-e5f44294.js",
-    "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
+  ".svelte-kit/generated/client-optimized/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-0e9e548a.js",
+    "src": ".svelte-kit/generated/client-optimized/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
-      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+      "__page-b5f0f468.js",
+      "src/routes/case_studies/[study]/+page.svelte"
     ]
   },
-  "src/routes/case_studies/[study]/+page.ts": {
-    "file": "_app/immutable/modules/pages/case_studies/_study_/_page.ts-097dfe1e.js",
-    "src": "src/routes/case_studies/[study]/+page.ts",
-    "isEntry": true,
+  ".svelte-kit/generated/client-optimized/nodes/5.js": {
+    "file": "_app/immutable/chunks/5-503d3914.js",
+    "src": ".svelte-kit/generated/client-optimized/nodes/5.js",
+    "isDynamicEntry": true,
     "imports": [
-      "_preload-helper-41c905a7.js",
-      "__page-13b21993.js"
+      "src/routes/hobbies/+page.svelte"
     ]
   },
   "src/routes/+layout.ts": {
@@ -142,16 +48,143 @@
       "__layout-da46b06b.js"
     ]
   },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-d9a0146d.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-7f84f7eb.js",
+      "_CaseList-5ef29440.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-980069ec.css"
+    ]
+  },
+  "src/routes/case_studies/Mechanism Design.md": {
+    "file": "_app/immutable/chunks/Mechanism Design-1071642f.js",
+    "src": "src/routes/case_studies/Mechanism Design.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-7f84f7eb.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-8ba7001b.js",
+    "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  "src/routes/case_studies/Data Driven Development.md": {
+    "file": "_app/immutable/chunks/Data Driven Development-973dc959.js",
+    "src": "src/routes/case_studies/Data Driven Development.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-7f84f7eb.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-9a5006f4.js",
+    "src": ".svelte-kit/generated/client-optimized/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__layout-da46b06b.js",
+      "src/routes/+layout.svelte"
+    ]
+  },
   "__layout-da46b06b.js": {
     "file": "_app/immutable/chunks/_layout-da46b06b.js"
   },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-7553a41a.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-7f84f7eb.js",
+      "_singletons-f642fa28.js"
+    ]
+  },
+  "src/routes/case_studies/[study]/+page.svelte": {
+    "file": "_app/immutable/components/pages/case_studies/_study_/_page.svelte-80d6e52f.js",
+    "src": "src/routes/case_studies/[study]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-7f84f7eb.js"
+    ]
+  },
+  "src/routes/case_studies/+page.svelte": {
+    "file": "_app/immutable/components/pages/case_studies/_page.svelte-7b6f7808.js",
+    "src": "src/routes/case_studies/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-7f84f7eb.js",
+      "_CaseList-5ef29440.js"
+    ]
+  },
+  "__page-b5f0f468.js": {
+    "file": "_app/immutable/chunks/_page-b5f0f468.js",
+    "imports": [
+      "_preload-helper-41c905a7.js"
+    ],
+    "dynamicImports": [
+      "src/routes/case_studies/Data Driven Development.md",
+      "src/routes/case_studies/Mechanism Design.md"
+    ]
+  },
+  "src/routes/hobbies/+page.svelte": {
+    "file": "_app/immutable/components/pages/hobbies/_page.svelte-07e89272.js",
+    "src": "src/routes/hobbies/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-7f84f7eb.js"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "_app/immutable/components/pages/_layout.svelte-c55a2f5d.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-7f84f7eb.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-dfa22a84.css"
+    ]
+  },
+  "src/routes/case_studies/[study]/+page.ts": {
+    "file": "_app/immutable/modules/pages/case_studies/_study_/_page.ts-5698b232.js",
+    "src": "src/routes/case_studies/[study]/+page.ts",
+    "isEntry": true,
+    "imports": [
+      "_preload-helper-41c905a7.js",
+      "__page-b5f0f468.js"
+    ]
+  },
+  "_singletons-f642fa28.js": {
+    "file": "_app/immutable/chunks/singletons-f642fa28.js",
+    "imports": [
+      "_index-7f84f7eb.js"
+    ]
+  },
+  "_index-7f84f7eb.js": {
+    "file": "_app/immutable/chunks/index-7f84f7eb.js"
+  },
+  "_preload-helper-41c905a7.js": {
+    "file": "_app/immutable/chunks/preload-helper-41c905a7.js"
+  },
+  "_CaseList-5ef29440.js": {
+    "file": "_app/immutable/chunks/CaseList-5ef29440.js",
+    "imports": [
+      "_index-7f84f7eb.js"
+    ]
+  },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-1ea7e274.js",
+    "file": "_app/immutable/start-cd71d040.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-386dfdec.js",
-      "_singletons-9076f6b0.js",
+      "_index-7f84f7eb.js",
+      "_singletons-f642fa28.js",
       "_preload-helper-41c905a7.js"
     ],
     "dynamicImports": [
@@ -161,39 +194,6 @@
       ".svelte-kit/generated/client-optimized/nodes/3.js",
       ".svelte-kit/generated/client-optimized/nodes/4.js",
       ".svelte-kit/generated/client-optimized/nodes/5.js"
-    ]
-  },
-  ".svelte-kit/generated/client-optimized/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-302808c9.js",
-    "src": ".svelte-kit/generated/client-optimized/nodes/0.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__layout-da46b06b.js",
-      "src/routes/+layout.svelte"
-    ]
-  },
-  "src/routes/hobbies/+page.svelte": {
-    "file": "_app/immutable/components/pages/hobbies/_page.svelte-1a3cfa58.js",
-    "src": "src/routes/hobbies/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-386dfdec.js"
-    ]
-  },
-  "src/routes/case_studies/Mechanism Design.md": {
-    "file": "_app/immutable/chunks/Mechanism Design-d62c7967.js",
-    "src": "src/routes/case_studies/Mechanism Design.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-386dfdec.js"
-    ]
-  },
-  "src/routes/case_studies/Data Driven Development.md": {
-    "file": "_app/immutable/chunks/Data Driven Development-859dbafb.js",
-    "src": "src/routes/case_studies/Data Driven Development.md",
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-386dfdec.js"
     ]
   }
 }
