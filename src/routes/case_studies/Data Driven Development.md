@@ -36,7 +36,7 @@ The Measured data set was limited by the pre-selected springs that had been used
 
 There was an best choice of spring offered but it had negative effects on the appearance of the weave due to not managing congestion issues in the harness. Through the variable model i was able to propose an optimum spring to production.
 
-### Collecting
+## Collecting
 Improved data collection allows the previous 2 concepts to be deployed to greater effect. It is important to make the burden of data collection low to allow colleagues to focus on their main tasks.
 
 While managing the R&D of a product I was aware that there was some recording of production data. 
