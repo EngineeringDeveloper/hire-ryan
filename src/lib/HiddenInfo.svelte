@@ -41,8 +41,9 @@
     <div class={titleClass} bind:this={titleDiv}>
         {title}
     </div>
+    <!-- height needs to be a value for transition to work does not work for fit content -->
     <div
-        class="h-0 w-screen opacity-0 group-hover:h-fit group-hover:opacity-100 overflow-hidden transition-height duration-300"
+        class="h-0 w-screen opacity-0 group-hover:h-60 group-hover:opacity-100 overflow-hidden transition-height duration-300"
     >
         <br />
         <div class="text-sm">
