@@ -13,6 +13,7 @@
         : "impact w-fit group-hover:anti-clockwise group-hover:bg-pink-500 group-hover:text-black";
 
     let titleDiv: HTMLDivElement;
+    let topDiv: HTMLDivElement;
     function setTitleWidth() {
         titleDiv.style.width = "auto";
         const range = document.createRange();
@@ -21,6 +22,7 @@
         range.setEndAfter(text);
         const clientRect = range.getBoundingClientRect();
         titleDiv.style.width = `${clientRect.width + 5}px`;
+        topDiv.style.width = `${clientRect.width + 5}px`;
     }
 
     onMount(() => {
@@ -33,7 +35,8 @@
 </script>
 
 <div
-    class="peer/more-info group flex flex-col w-fit peer-hover/more-info:opacity-10 hover:!opacity-100 peer-hover/name:!opacity-100"
+    class="peer/more-info group flex flex-col peer-hover/more-info:opacity-10 hover:!opacity-100 peer-hover/name:!opacity-100"
+    bind:this={topDiv}
 >
     <div class={titleClass} bind:this={titleDiv}>
         {title}
